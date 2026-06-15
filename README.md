@@ -48,3 +48,37 @@ Linear Regression failed to capture the relationship between region,
 year and affordability, confirming the data is non-linear. Random 
 Forest was selected as the final model and used to project 
 affordability ratios to 2028.
+
+
+---
+
+## Project Structure
+
+    uk-housing-affordability/
+    ├── data/
+    │   ├── raw/              <- HM Land Registry HPI + ONS ASHE Table 8 files
+    │   └── processed/        <- Cleaned merged dataset with affordability ratio
+    ├── notebooks/
+    │   ├── 01_data_loading.ipynb
+    │   ├── 02_exploratory_data_analysis.ipynb
+    │   ├── 03_modelling.ipynb
+    │   └── 04_conclusions.ipynb
+    ├── outputs/
+    │   └── charts/           <- 4 publication quality charts
+    └── README.md
+
+---
+
+## Charts
+
+### Affordability by Region — 2024
+![Affordability by Region](outputs/charts/01_affordability_by_region_2024.png)
+
+### Affordability Trend — 2015 to 2024
+![Affordability Trend](outputs/charts/02_affordability_trend_over_time.png)
+
+### Change in Affordability — 2015 to 2024
+![Affordability Change](outputs/charts/03_affordability_change_2015_2024.png)
+
+### Forecast — Actual and Predicted to 2028
+![Affordability Forecast](outputs/charts/04_affordability_forecast_2028.png)
