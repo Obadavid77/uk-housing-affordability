@@ -82,3 +82,36 @@ affordability ratios to 2028.
 
 ### Forecast — Actual and Predicted to 2028
 ![Affordability Forecast](outputs/charts/04_affordability_forecast_2028.png)
+
+
+---
+
+## Tools Used
+
+Python · pandas · scikit-learn · matplotlib · numpy · Jupyter Notebook
+
+---
+
+## Data Sources
+
+**HM Land Registry — UK House Price Index**  
+Average price data, October 2025 edition. Covers January 2015 to 
+October 2025, filtered to 9 England regions.  
+Licence: Open Government Licence v3.0  
+gov.uk/government/statistical-data-sets/uk-house-price-index-data-downloads-october-2025
+
+**Office for National Statistics — ASHE Table 8**  
+Earnings and hours worked, place of residence by local authority, 
+2015–2025 editions. Median gross annual earnings for full-time 
+employees by region.  
+Licence: Open Government Licence v3.0  
+ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/datasets/placeofresidencebylocalauthorityashetable8
+
+---
+
+## How to Run
+
+1. Clone this repository
+2. Install requirements: `pip install pandas matplotlib scikit-learn numpy openpyxl xlrd`
+3. Place HM Land Registry HPI CSV and ASHE Table 8 folders in `/data/raw/`
+4. Run notebooks in order: 01 → 02 → 03 → 04
